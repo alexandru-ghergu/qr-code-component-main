@@ -1,0 +1,39 @@
+@use 'abstracts';
+
+body,
+html {
+    @include abstracts.display-flex();
+    width: 100vw;
+    height: 100vh;
+    font-family: "Outfit", system-ui;
+    background-color: abstracts.$slate-300;
+}
+
+.qr-code-container {
+    @include abstracts.display-flex();
+    width: 20rem;
+    height: 31.19rem;
+    border-radius: 1.25rem;
+    background: abstracts.$white;
+}
+
+#qr-code {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 0.63rem;
+}
+
+.main-text {
+    width: 17rem;
+    height: 8.19rem;
+    text-align: center;
+    margin: 0.5rem 1rem 2.5rem;
+}
+
+h1 {
+    @include abstracts.outfit_bold();
+}
+
+p {
+    @include abstracts.outfit_regular();
+}

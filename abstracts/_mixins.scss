@@ -1,0 +1,23 @@
+@use 'variables';
+
+@mixin display-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@mixin outfit_bold {
+    font-size: 1.38rem;
+    font-weight: 700;
+    line-height: 120%;
+    color: variables.$slate-900;
+}
+
+@mixin outfit_regular {
+    font-size: 0.94rem;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: variables.$slate-500;
+}
